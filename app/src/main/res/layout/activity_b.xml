@@ -7,26 +7,26 @@
     tools:context=".presentation.MainActivity">
 
     <TextView
-        android:id="@+id/activity_a_tv"
+        android:id="@+id/activity_b_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/activity_a"
+        android:text="@string/activity_b"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@id/launch_activity_b_btn"
+        app:layout_constraintBottom_toTopOf="@id/launch_activity_c_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
-        android:id="@+id/launch_activity_b_btn"
+        android:id="@+id/launch_activity_c_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="@string/launch_activity_b"
+        android:text="@string/launch_activity_c"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/activity_a_tv" />
+        app:layout_constraintTop_toBottomOf="@+id/activity_b_tv" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
