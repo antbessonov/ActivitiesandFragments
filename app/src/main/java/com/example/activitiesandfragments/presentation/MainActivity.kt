@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        if (supportFragmentManager.backStackEntryCount == 1) {
+        if (isAFragment()) {
             this.finish()
         }
         super.onBackPressed()
@@ -29,4 +29,7 @@ class MainActivity : AppCompatActivity() {
             .addToBackStack(AFragment.NAME)
             .commit()
     }
+
+    private fun isAFragment(): Boolean =
+        supportFragmentManager.findFragmentById(R.id.main_container) is AFragment
 }
