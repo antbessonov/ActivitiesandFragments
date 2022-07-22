@@ -10,6 +10,13 @@ import com.example.activitiesandfragments.databinding.FragmentABinding
 
 class AFragment : Fragment() {
 
+    companion object {
+
+        const val NAME = "AFragment"
+
+        fun newInstance(): AFragment = AFragment()
+    }
+
     private var _binding: FragmentABinding? = null
     private val binding: FragmentABinding
         get() = _binding ?: throw RuntimeException("FragmentABinding == null")

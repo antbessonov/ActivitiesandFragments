@@ -41,9 +41,6 @@ class CFragment : Fragment() {
     }
 
     private fun launchAFragment() {
-        requireActivity().supportFragmentManager.popBackStack(
-            BFragment.NAME,
-            FragmentManager.POP_BACK_STACK_INCLUSIVE
-        )
+        requireActivity().supportFragmentManager.popBackStack(AFragment.NAME, 0)
     }
 }
