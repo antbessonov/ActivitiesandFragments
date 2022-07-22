@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Activities and Fragments</string>
+    <string name="a_fragment">Fragment A</string>
+    <string name="launch_b_fragment">Запуск Fragment B</string>
+    <string name="b_fragment">Fragment B</string>
+    <string name="launch_c_fragment">Запуск Fragment C</string>
+    <string name="c_fragment">Fragment C</string>
+    <string name="launch_a_fragment">Запуск Fragment A</string>
 </resources>
