@@ -13,15 +13,13 @@ class MainActivity : AppCompatActivity() {
         fun newIntentActivityA(context: Context): Intent = Intent(context, MainActivity::class.java)
     }
 
-    private lateinit var binding: ActivityMainBinding
+    private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
+        setContentView(binding.root)
 
         binding.launchActivityBBtn.setOnClickListener { launchActivityB() }
     }
